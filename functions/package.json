@@ -1,0 +1,16 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "saveOrderToDb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shodeinde Peter",
+  "license": "ISC",
+  "dependencies": {
+    "@modeliver_admin/sls-utils": "0.0.10",
+    "lodash": "4.17.20"
+  }
+}

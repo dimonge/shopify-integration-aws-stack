@@ -1,0 +1,34 @@
+{
+  "name": "shopify-order-stream",
+  "version": "0.1.0",
+  "bin": {
+    "shopify-order-stream": "bin/shopify-order-stream.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "synth": "CDK_DEPLOY_RESOURCE_STAGE=dev CDK_RESOURCE_STAGE=dev CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=dev cdk synth",
+    "diff": "CDK_DEPLOY_RESOURCE_STAGE=dev CDK_RESOURCE_STAGE=dev CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=dev cdk diff",
+    "deploy": "CDK_DEPLOY_RESOURCE_STAGE=dev CDK_RESOURCE_STAGE=dev CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=dev cdk deploy",
+    "deploy:prod": "CDK_DEPLOY_RESOURCE_STAGE=prod CDK_RESOURCE_STAGE=prod CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=prod cdk deploy --profile production",
+    "deploy:stag": "CDK_DEPLOY_RESOURCE_STAGE=prod CDK_RESOURCE_STAGE=prod CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=prod cdk deploy --profile staging",
+    "destroy": "CDK_DEPLOY_RESOURCE_STAGE=dev CDK_RESOURCE_STAGE=dev CDK_DEPLOY_REGION=eu-west-1 CDK_DEPLOY_STAGE=dev cdk destroy",
+    "bootstrap": "cdk bootstrap",
+    "test": "jest",
+    "watch": "npm start"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.69.0",
+    "aws-cdk": "1.69.0",
+    "jest": "26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-dynamodb": "1.69.0",
+    "@aws-cdk/aws-kinesis": "1.69.0",
+    "@aws-cdk/aws-lambda": "1.69.0",
+    "@aws-cdk/aws-lambda-event-sources": "1.71.0",
+    "@aws-cdk/core": "1.69.0",
+    "@modeliver_admin/sls-utils": "0.0.10",
+    "lodash": "4.17.20"
+  }
+}
